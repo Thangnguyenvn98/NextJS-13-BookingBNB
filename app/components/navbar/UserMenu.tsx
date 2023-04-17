@@ -6,11 +6,13 @@ import { useCallback, useState } from 'react'
 import MenuItem from './MenuItem'
 import RegisterModal from '../modals/RegisterModal';
 import useRegisterModalStore from '@/app/hooks/useRegisterModal'
+import useLoginModalStore from '@/app/hooks/useLoginModal'
 
 
 export default function  UserMenu() {
     const[isOpen,setIsOpen] = useState(false)
     const registerModal = useRegisterModalStore()
+    const loginModal = useLoginModalStore()
     
     const toggleOpen = useCallback(()=>{
         setIsOpen(!isOpen)
@@ -34,7 +36,7 @@ export default function  UserMenu() {
         <div className="absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm">
             <div className="flex flex-col cursor-pointer">
                 <>
-                    <MenuItem onClick={()=>{}} label={"Login"}/>
+                    <MenuItem onClick={loginModal.onOpen} label={"Login"}/>
                     <MenuItem onClick={registerModal.onOpen} label={"Sign Up"}/>
 
                 </>
