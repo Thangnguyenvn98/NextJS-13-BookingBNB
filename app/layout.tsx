@@ -1,4 +1,3 @@
-import Modal from './components/modals/Modal'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
 
@@ -38,7 +37,9 @@ export default async function RootLayout({
         <RegisterModal/>
         <Navbar currentUser={currentUser}/>
       </ClientOnly>
-     <div className="pb-20 pt-30">{children}</div>
+     <div className="pb-20 pt-28">
+      {children}
+      </div>
       
       </body>
     </html>
