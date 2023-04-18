@@ -55,6 +55,7 @@ export default function RentModal () {
     const bathroomCount = watch('bathroomCount')
     const imageSrc = watch('imageSrc')
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const Map = useMemo(()=> dynamic(()=> import('../Map'),{ssr:false}),[location])
 
  
