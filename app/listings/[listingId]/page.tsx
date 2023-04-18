@@ -22,6 +22,6 @@ export default async function ListingPage ({params}:{params:IParams}) {
     return (
         <ClientOnly>
         <ListingClient listing={listing} currentUser={currentUser}/>
-    </ClientOnly>
+        </ClientOnly>
     )
 }
