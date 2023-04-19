@@ -5,7 +5,6 @@ import Modal from "./Modal"
 import {useRouter, useSearchParams} from 'next/navigation'
 import { useCallback, useMemo, useState } from "react"
 import { Range } from "react-date-range"
-import dynamic from "next/dynamic"
 import CountrySelect, { CountrySelectValue } from "../inputs/CountrySelect"
 import  qs  from 'query-string'
 import {formatISO} from "date-fns"
@@ -18,6 +17,8 @@ enum STEPS {
     DATE = 1,
     INFO = 2
 }
+export const dynamic = 'force-dynamic'
+
 
 export default function SearchModal (){
     const router = useRouter()
