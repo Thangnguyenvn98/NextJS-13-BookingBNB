@@ -1,4 +1,4 @@
-"use client"
+
 
 import { useState, useEffect, useCallback } from "react";
 import {IoMdClose} from "react-icons/io"
@@ -15,8 +15,9 @@ interface ModalProps {
     footer?: React.ReactElement;
     actionLabel: string;
     disabled?: boolean;
-    secondaryAction?: () => void
-    secondaryActionLabel?: string
+    secondaryAction?: (() => void) | null | undefined;
+
+    secondaryActionLabel?: string | null
 
 }
 

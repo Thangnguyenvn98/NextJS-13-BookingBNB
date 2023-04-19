@@ -1,4 +1,3 @@
-"use client"
 
 import { IconType } from "react-icons"
 import { useRouter, useSearchParams } from "next/navigation";

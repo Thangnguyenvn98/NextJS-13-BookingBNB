@@ -108,7 +108,7 @@ export default function RentModal () {
 
     const secondaryActionLabel = useMemo(()=>{
         if (step === STEPS.CATEGORY) {
-            return undefined
+            return null
         }
         return 'Back'
 },[step])
@@ -184,7 +184,7 @@ export default function RentModal () {
 
     return (
         <Modal title="Airbnb your home" isOpen={rentModal.isOpen} onClose={rentModal.onClose} onSubmit={handleSubmit(onSubmit)} actionLabel={actionLabel}
-        secondaryActionLabel={secondaryActionLabel} secondaryAction={step === STEPS.CATEGORY ? undefined : onBack} body={bodyContent}
+        secondaryActionLabel={secondaryActionLabel} secondaryAction={step === STEPS.CATEGORY ? null : onBack} body={bodyContent}
         />
     )
 }

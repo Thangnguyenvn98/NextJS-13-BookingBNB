@@ -95,7 +95,7 @@ export default function SearchModal (){
 
     const secondaryActionLabel = useMemo(()=>{
         if(step === STEPS.LOCATION){
-            return undefined
+            return null
         }else {
             return "Back"
         }
@@ -135,7 +135,7 @@ export default function SearchModal (){
 
    return (
         <Modal
-            isOpen={searchModal.isOpen} onClose={searchModal.onClose} onSubmit={onSubmit} body={bodyContent}title="Filters" secondaryAction={step===STEPS.LOCATION ? undefined : onBack} actionLabel={actionLabel} secondaryActionLabel={secondaryActionLabel}
+            isOpen={searchModal.isOpen} onClose={searchModal.onClose} onSubmit={onSubmit} body={bodyContent}title="Filters" secondaryAction={step===STEPS.LOCATION ? null : onBack} actionLabel={actionLabel} secondaryActionLabel={secondaryActionLabel}
         />
     )
 }
