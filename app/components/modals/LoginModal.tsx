@@ -55,7 +55,7 @@ export default function LoginModal(){
 
     const bodyContent = (
         <div className="flex flex-col gap-4">
-            <Heading title={"Welcome Back!"} subtitle={"Login to your Account"}/>
+            <Heading title={"Welcome Back!"} subtitle={"Login to your MyVacay Account"}/>
             <Input register={register} id="email" disabled={isLoading} errors={errors} label={"Email"} required/>
             <Input register={register} id="password" type="password" disabled={isLoading} errors={errors} label={"Password"}required/>
         </div>
@@ -74,7 +74,7 @@ export default function LoginModal(){
             <Button outline label="Continue with Google" icon={AiFillGithub} onClick={()=>signIn("github")}/>
             <div className="text-neutral-500 text-center font-light mt-4">
                 <div className="flex items-center gap-2 justify-center">
-                    <div>First time using this app ?</div>
+                    <div>First time using MyVacay ?</div>
                     <div onClick={toggle} className="text-neutral-800 cursor-pointer hover:underline" >Create an account </div>
                 </div>
             </div>

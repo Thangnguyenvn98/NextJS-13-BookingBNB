@@ -48,7 +48,7 @@ export default function RegisterModal(){
 
     const bodyContent = (
         <div className="flex flex-col gap-4">
-            <Heading title={"Welcome to Airbnb"} subtitle={"Create an account!"}/>
+            <Heading title={"Welcome to MyVacay"} subtitle={"Create an account!"}/>
             <Input register={register} id="email" disabled={isLoading} errors={errors} label={"Email"} required/>
             <Input register={register} id="name" disabled={isLoading} errors={errors} label={"Name"} required/>
             <Input register={register} id="password" type="password" disabled={isLoading} errors={errors} label={"Password"}required/>

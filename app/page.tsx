@@ -30,7 +30,8 @@ const Home = async ({ searchParams }: HomeProps) => {
       <Container>
         <div 
           className="
-            pt-24
+            mt-14
+            pt-24 
             grid 
             grid-cols-1 
             sm:grid-cols-2 
