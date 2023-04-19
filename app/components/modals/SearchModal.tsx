@@ -11,6 +11,7 @@ import {formatISO} from "date-fns"
 import Heading from "../Heading"
 import Calendar from "../inputs/Calendar"
 import Counter from "../inputs/Counter"
+import dynamic from "next/dynamic"
 
 enum STEPS {
     LOCATION = 0,
