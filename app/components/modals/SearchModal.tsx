@@ -17,7 +17,6 @@ enum STEPS {
     DATE = 1,
     INFO = 2
 }
-export const dynamic = 'force-dynamic'
 
 
 export default function SearchModal (){
